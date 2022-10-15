@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+:root {
+  --color-dark: #363440;
+  --color-grey: #807e89;
+  --color-grey-light: #eeedf4;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-dark);
+}
+
+h1 {
+  font-size: 4.209rem;
+  font-weight: 500;
+  padding: 5rem 0;
+  line-height: 1.5;
+}
+
+h2,
+#projects a {
+  font-size: 1.777rem;
+  line-height: 1.75;
+}
+
+h3 {
+  font-size: 1.333rem;
+}
+
+p {
+  color: var(--color-grey);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+/* Menu */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  background-color: white;
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+}
+
+nav a {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+nav a.logo {
+  color: var(--color-dark);
+  font-size: 2.5rem;
+  margin: 4rem;
+  font-weight: 500;
+  /* position: fixed;
+  top: 0; */
+}
+
+nav li {
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 2rem;
+  padding-top: 4rem;
+}
+
+nav ul {
+  margin-right: 4rem;
+}
+
+header {
+  margin-top: 10vh;
+  min-height: 50vh;
+  background-color: white;
+  padding-left: 15vw;
+  width: 50vw;
+  min-width: 200px;
+}
+
+#introduction,
+#conclusion {
+  margin-top: 5rem;
+  min-height: 12vh;
+  background-color: var(--color-grey-light);
+  padding: 3rem 15vw;
+}
+
+.introduction_text,
+.conclusion_text {
+  line-height: 1.75;
+  max-width: 600px;
+}
+
+#projects {
+  margin-top: 5rem;
+  min-height: 12vh;
+  padding: 3rem 15vw;
+  overflow: scroll;
+}
+
+#projects > div > div:nth-child(3) {
+  padding-right: 8rem;
+}
+
+.cover {
+  height: 400px;
+  width: 800px;
+  border-radius: 10px;
+  background-color: var(--color-dark);
+  margin-bottom: 2rem;
+}
+
+.projects_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-left: -8vw;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.projects_grid::-webkit-scrollbar {
+  display: none;
+}
+
+footer {
+  gap: 2rem;
+  padding: 4rem;
+  color: var(--color-grey);
+}
+
+/* PROJECT PAGES */
+#p1_cover {
+  border-radius: 10px;
+  background-color: var(--color-dark);
+  height: 50vh;
+  width: 100%;
+}
+
+#p_conclusion {
+  margin-top: 5rem;
+  min-height: 12vh;
+  background-color: var(--color-grey-light);
+  padding: 3rem 15vw;
+}
+
+.p1_image {
+  border-radius: 10px;
+  background-color: var(--color-dark);
+  height: 50vh;
+  margin: 0 8rem;
+}
+
+.project_text {
+  padding: 5rem 15vw;
+  line-height: 1.75;
+  max-width: 600px;
+}
