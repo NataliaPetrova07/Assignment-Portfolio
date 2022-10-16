@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Lato:wght@300;400&display=swap");
 
 * {
   margin: 0px;
@@ -43,6 +43,8 @@ p {
   color: var(--color-grey);
   font-size: 1rem;
   font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 1.75;
 }
 
 a {
@@ -97,6 +99,10 @@ header {
   min-width: 200px;
 }
 
+.project_header {
+  margin-bottom: 5rem;
+}
+
 #introduction,
 #conclusion {
   margin-top: 5rem;
@@ -147,13 +153,23 @@ footer {
   gap: 2rem;
   padding: 4rem;
   color: var(--color-grey);
+  font-family: "Lato", sans-serif;
 }
 
 /* PROJECT PAGES */
 #p1_cover {
   border-radius: 10px;
   background-color: var(--color-dark);
-  height: 50vh;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #54578c;
+}
+
+#p1_cover img {
   width: 100%;
 }
 
@@ -163,16 +179,45 @@ footer {
   background-color: var(--color-grey-light);
   padding: 3rem 15vw;
 }
+.cover {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cover img {
+  width: 100%;
+}
 
 .p1_image {
   border-radius: 10px;
   background-color: var(--color-dark);
-  height: 50vh;
   margin: 0 8rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-height: 700px;
 }
-
+.p1_image img {
+  width: 100%;
+}
 .project_text {
   padding: 5rem 15vw;
   line-height: 1.75;
   max-width: 600px;
+  font-size: 1rem;
+}
+
+.website_link {
+  padding: 5rem 15vw;
+  line-height: 1.75;
+  max-width: 600px;
+  font-size: 1rem;
+}
+
+.website_link a {
+  color: var(--color-grey);
+  font-family: "Lato", sans-serif;
 }
