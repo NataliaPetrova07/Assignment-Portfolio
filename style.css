@@ -303,6 +303,12 @@ footer {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+#conclusion h2 {
+  transform: translateX(2rem);
+  opacity: 0;
+}
+
 @media screen and (min-width: 2000px) {
   html {
     font-size: 1.5em;

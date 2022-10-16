@@ -18,3 +18,11 @@ scroll(
   }),
   { target: document.querySelector("#projects") }
 );
+
+inView(
+  "#conclusion",
+  ({ target }) => {
+    animate(target.querySelector("h2"), { opacity: 1, transform: "none" }, { delay: 0.2, duration: 1, easing: "ease-in-out" });
+  },
+  { amount: 0.15 }
+);
