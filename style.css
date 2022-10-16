@@ -77,8 +77,8 @@ nav a.logo {
   font-size: 2.5rem;
   margin: 4rem;
   font-weight: 500;
-  /* position: fixed;
-  top: 0; */
+  position: fixed;
+  z-index: 10;
 }
 
 nav li {
@@ -92,6 +92,7 @@ nav li {
 
 nav ul {
   margin-right: 4rem;
+  margin-left: auto;
 }
 
 header {
@@ -105,6 +106,7 @@ header {
 
 .project_header {
   margin-bottom: 5rem;
+  position: relative;
 }
 
 #introduction,
@@ -143,10 +145,12 @@ header {
 .projects_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 5rem;
   margin-left: -8vw;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  height: 70vh;
+  align-items: center;
 }
 
 .projects_grid::-webkit-scrollbar {
@@ -158,9 +162,28 @@ footer {
   padding: 4rem;
   color: var(--color-grey);
   font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.home {
+  opacity: 0;
 }
 
 /* PROJECT PAGES */
+.next_project {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  right: 6rem;
+  bottom: 5rem;
+  position: fixed;
+  z-index: 20;
+}
+
+.next_project svg:hover {
+  fill: var(--color-grey);
+}
+
 #p1_cover {
   border-radius: 10px;
   background-color: var(--color-dark);
@@ -174,6 +197,7 @@ footer {
 
 #p1_cover img {
   width: 100%;
+  transform: translateY(var(--motion-translateY));
 }
 #p_conclusion {
   margin-top: 5rem;
@@ -245,4 +269,29 @@ footer {
 .website_link a {
   color: var(--color-grey);
   font-family: "Lato", sans-serif;
+}
+
+/* ANIMATIONS */
+.p_link {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.p_link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-grey);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.p_link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
