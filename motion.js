@@ -14,7 +14,7 @@ document.querySelectorAll("#p1_cover").forEach((image) => {
 const items = document.querySelectorAll(".project");
 scroll(
   animate(".projects_grid", {
-    transform: ["translateX(-60rem)", "translateX(0)"],
+    transform: ["translateX(-80rem)", "translateX(0)"],
   }),
   { target: document.querySelector("#projects") }
 );
